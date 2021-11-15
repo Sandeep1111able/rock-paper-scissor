@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
+
 <body>
-   
-    <script src="script.js"></script>
+    <div class="flex">
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+            <p>First to 5 wins the game.</p>
+            <div class="rock-paper-scissors">
+                <div class="rps-box">
+                    <img src="./images/rock.png" alt="Rock">
+                    <button class="btn-rps">Rock</button>
+                </div>
+                <div class="rps-box">
+                    <img src="./images/paper.png" alt="Paper">
+                    <button class="btn-rps">Paper</button>
+                </div>
+                <div class="rps-box">
+                    <img src="./images/scissors.png" alt="scissors">
+                    <button class="btn-rps">Scissors</button>
+                </div>
+            </div>
+
+            <div class="score">
+                <div class="player">
+                    <h2>Player Score</h2>
+                    <div class="player-choice"></div>
+                    <label id="player-score">0</label>
+                </div>
+                <div class="computer">
+                    <h2>Computer Score</h2>
+                    <div class="computer-choice"></div>
+                    <label id="computer-score">0</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 </body>
+
 </html>
